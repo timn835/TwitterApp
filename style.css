@@ -1,0 +1,273 @@
+body {
+    color: #0C1319;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#content {
+    width: 45vw;
+}
+#header {
+    display: flex;
+}
+.back-btn {
+    background-color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    font-size: 15px;
+    font-weight: 1000;
+    border-radius: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.back-btn:hover {
+    background-color: #E7E7E7;
+    cursor: pointer;
+    color: #1C99EB;
+}
+
+.back-btn>img {
+    height: 50%;
+}
+
+.header-user {
+    margin: 0px !important;
+    font-size: 20px;
+    font-weight: 700;
+}
+.name-and-symbol {
+    display: flex;
+}
+.checkmark-symbol {
+    display:flex;
+    align-items: center;
+}
+.checkmark-symbol>img {
+    width: 30px;
+}
+.info {
+    color: rgb(83, 100, 113);
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+#cover-photo {
+    width: 100%;
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+#cover-photo-inner {
+    border: 3px solid white;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    bottom: -60px;
+    left: 15px;
+}
+
+.follow-btn {
+    position: absolute;
+    bottom: -50px;
+    right: 10px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    border: none;
+    border-radius: 20px;
+    transition: .2s ease all;
+    padding: 8px 15px;
+}
+
+#cover-photo:hover {
+    cursor: pointer;
+}
+
+.follow-btn:hover {
+    transition: .2s ease all;
+    cursor: pointer;
+    opacity: .8;
+}
+
+#profile-details {
+    margin-left: 10px;
+}
+
+.calendar-symbol {
+    display:flex;
+    align-items: flex-start;
+}
+.calendar-symbol>img {
+    width: 13px;
+}
+
+#calendar-section {
+    margin: 15px 0;
+}
+
+#following-number, #followers-number {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#following {
+    margin-right: 10px;
+}
+
+#tabs-and-content {
+    margin-top: 10px;
+}
+
+.tabs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.tab {
+    width: 25%;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    color: rgb(83, 100, 113);
+}
+.tab:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+.tab-select>.tab-text {
+    width: fit-content;
+    border-bottom: 2px solid blue;
+    padding-bottom: 5px;
+    color: #0C1319;
+}
+
+
+.tab-content {
+    display: none;
+}
+
+.tab-content-select {
+    display: block;
+}
+
+.tweet {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tweet-content {
+    margin-left: 10px;
+}
+.tweet-info {
+    display: flex;
+}
+
+.hero-image {
+    border: 3px solid white;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    bottom: -60px;
+    left: 15px;
+}
+
+.tweet-info-user {
+    font-size: 15px;
+    font-weight: 700;
+
+}
+.tweet-info-checkmark-symbol {
+    display:flex;
+    align-items: center;
+    margin: 0 3px;
+}
+.tweet-info-checkmark-symbol>img {
+    width: 20px;
+}
+.tweet-info-handle {
+    font-size: 15px;
+    color: rgb(83, 100, 113);
+}
+.tweet-attributes {
+    display: flex;
+}
+
+.replies:hover, .retweets:hover, .likes:hover, .download:hover {
+    cursor: pointer;
+}
+.replies-img, .retweets-img, .likes-img, .download {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 100%;
+}
+.replies-txt, .retweets-txt, .likes-txt {
+    margin-right: 5px;
+}
+
+.replies-img {
+    content: url("assets/replies.png");
+}
+.replies:hover > .replies-img {
+    content: url("assets/replies-h.png");
+}
+.replies:hover > .replies-txt {
+    color: #1C9FFA;
+}
+
+
+.retweets-img {
+    content: url("assets/retweets.png");
+}
+.retweets:hover > .retweets-img {
+    content: url("assets/retweets-h.png");
+}
+.retweets:hover > .retweets-txt {
+    color: #03B97C;
+}
+
+.likes-img {
+    content: url("assets/likes.png");
+}
+.likes:hover > .likes-img {
+    content: url("assets/likes-h.png");
+}
+.likes:hover > .likes-txt {
+    color: #FE2282;
+}
+
+.download {
+    content: url("assets/download.png");
+}
+.download:hover {
+    content: url("assets/download-h.png");
+}
+.replies, .retweets, .likes {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(83, 100, 113);
+}
